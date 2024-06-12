@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Zinkx Developer Tools</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="dark-mode">
+  <header>
+    <img src="icons/icon16.png" alt="Zinkx Logo">
+    <h1>Zinkx Geliştirici Araçları</h1>
+  </header>
+  <div class="toolbar">
+    <button id="darkModeToggle">Gece Modu</button>
+    <button id="assistantModeToggle">Asistan Modu</button>
+  </div>
+  <div class="grid-container">
+    <div class="tool-section">
+      <h2>Kod Araçları</h2>
+      <button class="popup-button" data-popup="code-analysis-popup">Kodu Analiz Et</button>
+      <p>Kodunuzda hata ve sorunları tespit edin.</p>
+      <button class="popup-button" data-popup="code-editor-popup">Kaynak Kod Düzenleyici</button>
+      <p>Kaynak kodlarınızı düzenleyin ve değişiklikleri uygulayın.</p>
+    </div>
+    <!-- Diğer tool-section bölümleri buraya eklenebilir -->
+  </div>
+
+  <div id="code-analysis-popup" class="popup">
+    <div class="popup-header">
+      <img src="icons/icon16.png" alt="Icon">
+      <button class="popup-close">&times;</button>
+    </div>
+    <h3>Kod Analizi ve Hata Ayıklama</h3>
+    <button id="analyzeCode">Kodu Analiz Et</button>
+    <p>Kodunuzda hata ve sorunları tespit edin.</p>
+    <pre id="analysisResults"></pre>
+  </div>
+  <!-- Diğer pop-up bölümleri buraya eklenebilir -->
+
+  <script src="devtools.js"></script>
+</body>
+</html>
